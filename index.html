@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="p-20">
+        <form action="" class="form-animation flex justify-center items-center border border-gray-300 rounded-lg w-full" onsubmit="return false;">
+            <div class="flex flex-col p-10">
+                <div class="flex gap-10 justify-center items-center">
+                    <h1 class="text-2xl flex justify-center items-center" id="second">Second...</h1>
+                    <h1 class="text-2xl flex justify-center items-center" id="animation">Animation</h1>
+                </div>
+                <input type="text" placeholder="Enter your second" id="input-second" class="mt-5 h-10 rounded-lg pl-2 border border-gray-300">
+                <div class="flex mt-5 gap-5">
+                    <button class="border border-gray-300 pt-3 pb-3 pl-12 pr-12 rounded-lg bg-teal-300 hover:bg-green-300" onclick="btn_start()">Start</button>
+                    <button class="border border-gray-300 pt-3 pb-3 pl-12 pr-12 rounded-lg bg-teal-300 hover:bg-red-300" onclick="btn_clear_timeout()">Clear Timeout</button>
+                    <button class="border border-gray-300 pt-3 pb-3 pl-12 pr-12 rounded-lg bg-teal-300 hover:bg-red-300" onclick="btn_clear_animation()">Clear Animation</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>  
+</body>
+</html>
